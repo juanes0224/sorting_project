@@ -1,45 +1,100 @@
-Descripción del proyecto
 
-Este proyecto consiste en el desarrollo de un programa en C++ capaz de ordenar un conjunto grande de datos (100,000 palabras) utilizando tres estrategias diferentes basadas en estructuras de datos y algoritmos clásicos.
+# 📚 Ordenamiento de 100,000 Palabras en C++
 
-El objetivo principal es analizar el comportamiento de distintos algoritmos de ordenamiento cuando trabajan con grandes volúmenes de información, evaluando su rendimiento en términos de tiempo de ejecución y uso de memoria.
+> Proyecto académico en C++ para comparar algoritmos y estructuras de datos aplicados al ordenamiento de grandes volúmenes de palabras.
 
-Objetivos 
+---
 
-Implementar algoritmos de ordenamiento desde cero.
+## 🚀 Descripción
 
-Utilizar diferentes estructuras de datos para resolver el mismo problema.
+Este proyecto desarrolla un programa en **C++** capaz de ordenar **100,000 palabras** utilizando tres enfoques diferentes:
 
-Comparar el rendimiento de cada enfoque.
+- **QuickSort**
+- **HeapSort**
+- **Árbol balanceado (AVL o Red-Black Tree)**
 
-Analizar diferencias entre complejidad teórica y resultados prácticos.
+El objetivo es comparar su comportamiento en términos de:
 
+- ⏱️ Tiempo de ejecución  
+- 💾 Uso de memoria  
+- 📈 Rendimiento práctico vs. complejidad teórica  
 
-Dataset
+---
 
-El programa utiliza un conjunto de datos generado a partir del archivo:
-words_alpha.txt
+## 🎯 Objetivos
 
-A partir de este archivo se seleccionan 100,000 palabras aleatorias y se almacenan en un archivo llamado dataset.txt
+- Implementar algoritmos de ordenamiento **desde cero**
+- Usar distintas estructuras de datos para resolver el mismo problema
+- Comparar el desempeño de cada enfoque
+- Analizar diferencias entre teoría y práctica
 
+---
 
-Algoritmos Implementados
+## 🗂️ Dataset
 
-1. QuickSort (Arreglo dinámico)
-Es implementado desde cero y utiliza std::vector<string>. Su función es ordenar las palabras alfabéticamente
+El conjunto de datos se genera a partir del archivo:
 
-2. HeapSort (Montículo binario)
-Es implementado desde cero y se construye un Binary Heap. A partir del heap se obtiene el arreglo ordenado
+`words_alpha.txt`
 
-3. Árbol Balanceado (AVL o Red-Black Tree)
-En donde el proceso empieza por la inserción de las 100,000 palabras en el árbol, luego hace el recorrido inorder y por último almacena el resultado en una lista ordenada.
+A partir de él:
 
+- Se seleccionan **100,000 palabras aleatorias**
+- Se almacenan en `dataset.txt`
 
-Conclusión 
+Este archivo sirve como entrada principal del programa.
 
-Este proyecto permite evidenciar cómo diferentes estructuras de datos y algoritmos pueden influir en el rendimiento al trabajar con grandes volúmenes de información.
+---
 
-Autores
+## ⚙️ Algoritmos implementados
 
-Juan Esteban Grisales
-Sofía Rojo
+| Algoritmo / Estructura | Descripción | Característica principal |
+|------------------------|-------------|--------------------------|
+| **QuickSort** | Implementado desde cero con `std::vector` | Muy eficiente en promedio |
+| **HeapSort** | Implementado desde cero con un **Binary Heap** | Ordenamiento basado en montículos |
+| **Árbol balanceado** | Inserción en AVL o Red-Black Tree + recorrido inorder | Mantiene los datos ordenados dinámicamente |
+
+---
+
+## 🧠 Enfoques utilizados
+
+### 🔹 QuickSort
+Ordena las palabras alfabéticamente mediante la estrategia de **divide y vencerás**, usando un arreglo dinámico (`std::vector`).
+
+### 🔹 HeapSort
+Construye un **montículo binario** desde cero y luego extrae los elementos para obtener el resultado ordenado.
+
+### 🔹 Árbol balanceado
+Inserta las palabras en un árbol balanceado (**AVL o Red-Black Tree**), realiza un recorrido **inorder** y almacena el resultado en una lista ordenada.
+
+---
+
+## 🔍 Análisis del proyecto
+
+Este proyecto permite estudiar cómo la elección del algoritmo o estructura de datos afecta el rendimiento al trabajar con grandes volúmenes de información.
+
+Se comparan aspectos como:
+
+- Tiempo de ejecución
+- Uso de memoria
+- Facilidad de implementación
+- Comportamiento real frente a la complejidad teórica
+
+---
+
+## ✅ Conclusión
+
+El proyecto demuestra que diferentes algoritmos y estructuras de datos pueden producir el mismo resultado, pero con costos computacionales distintos.
+
+Comparar **QuickSort**, **HeapSort** y **árboles balanceados** permite comprender mejor sus ventajas, limitaciones y aplicaciones en escenarios reales.
+
+---
+
+## Aclaraciones
+
+Se utilizo ayuda de claude ai para el desarrollo del proyecto
+
+---
+## 👨‍💻 Autores
+
+**Juan Esteban Grisales Restrepo**  
+**Sofía Rojo Salazar**
