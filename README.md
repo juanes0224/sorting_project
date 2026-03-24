@@ -91,7 +91,7 @@ Comparar **QuickSort**, **HeapSort** y **árboles balanceados** permite comprend
 
 ## Aclaraciones
 
-Se utilizo ayuda de claude ai para el desarrollo del proyecto
+Se utilizo ayuda de claude ai para el desarrollo del proyecto, y chat gpt para organizar el README.md
 
 ---
 ## 👨‍💻 Autores
